@@ -1,0 +1,124 @@
+{
+  "workbench.colorTheme": "Winter is Coming (Dark Blue)",
+  "workbench.iconTheme": "material-icon-theme",
+
+  "editor.fontFamily": "Fira Code, JetBrains Mono, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.wordWrap": "on",
+  "editor.mouseWheelZoom": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.formatOnSave": true,
+
+  "files.autoSave": "onFocusChange",
+
+  "editor.tokenColorCustomizations": {
+    "comments": "#8ab593",
+    "keywords": "#ff7b72",
+    "functions": "#d2a8ff",
+    "strings": "#4a8fc1",
+    "numbers": "#79c0ff",
+    "types": "#ffab70",
+    "variables": "#066cd2" 
+  },
+
+
+  "workbench.colorCustomizations": {
+    "editor.background": "#000d1b",
+    "editor.foreground": "#c9d1d9",
+    "editorLineNumber.foreground": "#6e7681",
+    "editorCursor.foreground": "#f78166",
+    "editor.selectionBackground": "#0c335d",
+    "editor.lineHighlightBackground": "#0a2348",
+
+    "activityBarBadge.background": "#80CBC4",
+    "activityBarBadge.foreground": "#000000",
+    "activityBar.activeBorder": "#80CBC4",
+    
+    "editorGutter.background": "#000d1b",
+
+    "terminal.background": "#000d1b",
+    // "terminal.foreground": "#000d1b",
+    "panel.background": "#000d1b",
+
+
+
+
+
+    "button.background": "#439b92",
+    "button.hoverBackground": "#80CBC4cc",
+    "button.foreground": "#000000",
+
+    "tab.activeBorder": "#80CBC4",
+    "progressBar.background": "#80CBC4",
+
+    "list.activeSelectionForeground": "#80CBC4",
+    "list.inactiveSelectionForeground": "#80CBC4",
+    "list.highlightForeground": "#80CBC4",
+
+    "scrollbarSlider.activeBackground": "#1a433f80",
+
+    "statusBarItem.remoteBackground": "#80CBC414",
+    "statusBarItem.remoteForeground": "#80CBC4",
+    "statusBarItem.remoteHoverBackground": "#80CBC4",
+    "statusBarItem.remoteHoverForeground": "#000000",
+
+    "sideBar.background": "#000d1b",
+    "sideBar.foreground": "#c9d1d9",
+    "sideBar.border": "#80CBC433",
+
+    "sideBarSectionHeader.background": "#011932",
+    "sideBarSectionHeader.foreground": "#80CBC4",
+
+    "list.activeSelectionBackground": "#264f78",
+    "list.hoverBackground": "#161b22"
+
+  },
+
+  "editor.defaultFormatter": "michelemelluso.code-beautifier",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": ["--login", "-i"]
+    },
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    }
+  },
+
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+
+  "npm.enableRunFromFolder": true,
+  "npm.packageManager": "npm",
+
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "c": false
+  },
+  "github.copilot.chat.agent.autoFix": false,
+  "github.copilot.chat.agent.runTasks": false,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": false,
+
+  "css.lint.unknownAtRules": "ignore",
+  "css.lint.unknownProperties": "ignore",
+
+  "workbench.editor.empty.hint": "hidden"
+}
