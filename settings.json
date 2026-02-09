@@ -41,11 +41,6 @@
     "terminal.background": "#000d1b",
     // "terminal.foreground": "#000d1b",
     "panel.background": "#000d1b",
-
-
-
-
-
     "button.background": "#439b92",
     "button.hoverBackground": "#80CBC4cc",
     "button.foreground": "#000000",
