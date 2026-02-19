@@ -1,6 +1,6 @@
 # Vs-code-setup
 
-<b>write this line in terminal to install all these extension with a single line</b>
+<b>write this line in terminal to install all these extension with a single line</b> </br>
 code --install-extension formulahendry.auto-rename-tag --install-extension michelemelluso.code-beautifier --install-extension ms-vscode.cpptools --install-extension formulahendry.code-runner --install-extension dsznajder.es7-react-js-snippets --install-extension dbaeumer.vscode-eslint --install-extension vscjava.vscode-java-pack --install-extension GitHub.copilot-chat --install-extension eamodio.gitlens --install-extension ecmel.vscode-html-css --install-extension xabikos.JavaScriptSnippets --install-extension ritwickdey.LiveServer --install-extension pnp.polacode --install-extension PKief.material-icon-theme --install-extension christian-kohler.npm-intellisense --install-extension esbenp.prettier-vscode --install-extension rvest.vs-code-prettier-eslint --install-extension burkeholland.simple-react-snippets --install-extension bradlc.vscode-tailwindcss --install-extension austenc.tailwind-docs --install-extension GitHub.copilot --install-extension glenn2223.live-sass
 
 
