@@ -1,78 +1,184 @@
 {
+
+  // workbench theme settings
+
   "workbench.colorTheme": "Winter is Coming (Dark Blue)",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.empty.hint": "hidden",
 
-  "editor.fontFamily": "Fira Code, JetBrains Mono, Consolas, 'Courier New', monospace",
+
+  // editor setting
+
+  "editor.fontFamily": "Source Code Pro, Fira Code,JetBrains Mono, Consolas, 'Courier New', monospace",
   "editor.fontSize": 16,
-  "editor.cursorBlinking": "expand",
-  "editor.cursorSmoothCaretAnimation": "on",
   "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
   "editor.mouseWheelZoom": true,
   "editor.guides.bracketPairs": "active",
-  "editor.formatOnSave": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+
+
+  // token color customization
+
+  "editor.tokenColorCustomizations": {
+    "comments":   "#8ab593",
+    "keywords":   "#ff7b72",
+    "functions":  "#d2a8ff",
+    "strings":    "#4a8fc1",
+    "numbers":    "#79c0ff",
+    "types":      "#ffab70",
+    "variables":  "#066cd2",
+    "textMateRules": [
+
+      // ── HTML Tags & Brackets ──────────────────────────────────
+      {
+        "scope": [
+          "punctuation.definition.tag.begin.html",
+          "punctuation.definition.tag.end.html",
+          "punctuation.definition.tag.html",
+          "meta.tag.any.html punctuation.definition.tag",
+          "meta.tag.block.any.html punctuation.definition.tag",
+          "meta.tag.inline.any.html punctuation.definition.tag",
+          "meta.tag.structure.any.html punctuation.definition.tag"
+        ],
+        "settings": { "foreground": "#0077b6" }
+      },
+      {
+        "scope": "entity.name.tag.html",
+        "settings": { "foreground": "#0077b6" }
+      },
+
+      // ── JSX / TSX Tags & Brackets ─────────────────────────────
+      {
+        "scope": [
+          "punctuation.definition.tag.begin.js",
+          "punctuation.definition.tag.end.js",
+          "punctuation.definition.tag.begin.jsx",
+          "punctuation.definition.tag.end.jsx",
+          "punctuation.definition.tag.begin.tsx",
+          "punctuation.definition.tag.end.tsx",
+          "punctuation.definition.tag.jsx",
+          "punctuation.definition.tag.tsx",
+          "meta.jsx.children punctuation.definition.tag",
+          "JSXOpeningElement.punctuation",
+          "JSXClosingElement.punctuation"
+        ],
+        "settings": { "foreground": "#0077b6" }
+      },
+      {
+        "scope": [
+          "entity.name.tag.jsx",
+          "entity.name.tag.tsx",
+          "support.class.component.jsx",
+          "support.class.component.tsx"
+        ],
+        "settings": { "foreground": "#0077b6" }
+      },
+
+      // ── XML Tags & Brackets ───────────────────────────────────
+      {
+        "scope": [
+          "punctuation.definition.tag.begin.xml",
+          "punctuation.definition.tag.end.xml",
+          "punctuation.definition.tag.xml",
+          "meta.tag.xml punctuation.definition.tag"
+        ],
+        "settings": { "foreground": "#0077b6" }
+      },
+      {
+        "scope": "entity.name.tag.xml",
+        "settings": { "foreground": "#0077b6" }
+      },
+
+      // ── SCSS / CSS ────────────────────────────────────────────
+      {
+        "scope": [
+          "entity.name.tag.css",
+          "entity.name.tag.scss"
+        ],
+        "settings": { "foreground": "#0077b6" }
+      }
+
+    ]
+  },
+
+
+  // workbench color customization
+
+  "workbench.colorCustomizations": {
+
+    // ── Editor Core ───────────────────────────────────────────
+    "editor.background":                  "#000a15",
+    "editor.foreground":                  "#c9d1d9",
+    "editorLineNumber.foreground":        "#6e7681",
+    "editorCursor.foreground":            "#f78166",
+    "editor.selectionBackground":         "#0c335d",
+    "editor.lineHighlightBackground":     "#0a2348",
+    "editorGutter.background":            "#000d1b",
+
+    // ── Activity Bar ──────────────────────────────────────────
+    "activityBar.activeBorder":           "#80CBC4",
+    "activityBarBadge.background":        "#80CBC4",
+    "activityBarBadge.foreground":        "#000000",
+
+    // ── Sidebar ───────────────────────────────────────────────
+    "sideBar.background":                 "#000d1b",
+    "sideBar.foreground":                 "#c9d1d9",
+    "sideBar.border":                     "#80CBC433",
+    "sideBarSectionHeader.background":    "#011932",
+    "sideBarSectionHeader.foreground":    "#80CBC4",
+
+    // ── Lists ─────────────────────────────────────────────────
+    "list.activeSelectionBackground":     "#264f78",
+    "list.activeSelectionForeground":     "#80CBC4",
+    "list.inactiveSelectionForeground":   "#80CBC4",
+    "list.highlightForeground":           "#80CBC4",
+    "list.hoverBackground":               "#161b22",
+
+    // ── Tabs ──────────────────────────────────────────────────
+    "tab.activeBorder":                   "#80CBC4",
+
+    // ── Buttons ───────────────────────────────────────────────
+    "button.background":                  "#439b92",
+    "button.hoverBackground":             "#80CBC4cc",
+    "button.foreground":                  "#000000",
+
+    // ── Terminal & Panel ──────────────────────────────────────
+    "terminal.background":                "#000d1b",
+    "panel.background":                   "#000d1b",
+
+    // ── Status Bar ────────────────────────────────────────────
+    "statusBarItem.remoteBackground":     "#80CBC414",
+    "statusBarItem.remoteForeground":     "#80CBC4",
+    "statusBarItem.remoteHoverBackground":"#80CBC4",
+    "statusBarItem.remoteHoverForeground":"#000000",
+
+    // ── Misc ──────────────────────────────────────────────────
+    "progressBar.background":             "#80CBC4",
+    "scrollbarSlider.activeBackground":   "#1a433f80"
+  },
+
+
+  // file and save setting
 
   "files.autoSave": "onFocusChange",
 
-  "editor.tokenColorCustomizations": {
-    "comments": "#8ab593",
-    "keywords": "#ff7b72",
-    "functions": "#d2a8ff",
-    "strings": "#4a8fc1",
-    "numbers": "#79c0ff",
-    "types": "#ffab70",
-    "variables": "#066cd2" 
-  },
 
+  // formatter language settings
 
-  "workbench.colorCustomizations": {
-    "editor.background": "#000d1b",
-    "editor.foreground": "#c9d1d9",
-    "editorLineNumber.foreground": "#6e7681",
-    "editorCursor.foreground": "#f78166",
-    "editor.selectionBackground": "#0c335d",
-    "editor.lineHighlightBackground": "#0a2348",
+  // "editor.defaultFormatter": "michelemelluso.code-beautifier",
 
-    "activityBarBadge.background": "#80CBC4",
-    "activityBarBadge.foreground": "#000000",
-    "activityBar.activeBorder": "#80CBC4",
-    
-    "editorGutter.background": "#000d1b",
-
-    "terminal.background": "#000d1b",
-    // "terminal.foreground": "#000d1b",
-    "panel.background": "#000d1b",
-    "button.background": "#439b92",
-    "button.hoverBackground": "#80CBC4cc",
-    "button.foreground": "#000000",
-
-    "tab.activeBorder": "#80CBC4",
-    "progressBar.background": "#80CBC4",
-
-    "list.activeSelectionForeground": "#80CBC4",
-    "list.inactiveSelectionForeground": "#80CBC4",
-    "list.highlightForeground": "#80CBC4",
-
-    "scrollbarSlider.activeBackground": "#1a433f80",
-
-    "statusBarItem.remoteBackground": "#80CBC414",
-    "statusBarItem.remoteForeground": "#80CBC4",
-    "statusBarItem.remoteHoverBackground": "#80CBC4",
-    "statusBarItem.remoteHoverForeground": "#000000",
-
-    "sideBar.background": "#000d1b",
-    "sideBar.foreground": "#c9d1d9",
-    "sideBar.border": "#80CBC433",
-
-    "sideBarSectionHeader.background": "#011932",
-    "sideBarSectionHeader.foreground": "#80CBC4",
-
-    "list.activeSelectionBackground": "#264f78",
-    "list.hoverBackground": "#161b22"
-
-  },
-
-  "editor.defaultFormatter": "michelemelluso.code-beautifier",
   "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[sass]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
@@ -81,25 +187,98 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+
+
+  // live sass compiler settings 
+
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/src/styles/dist"
+    },
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/src/styles/dist"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "/**/node_modules/**",
+    "/.vscode/**",
+    "/**/dist/**"
+  ],
+  "liveSassCompile.settings.watchFiles": [
+    "/**/*.scss",
+    "/**/*.sass"
+  ],
+  "liveSassCompile.settings.compileOnWatch": true,
+  "liveSassCompile.settings.showOutputWindowOn": "Error",
+
+
+  // css scss lint settings
+
+  "css.lint.unknownAtRules": "ignore",
+  "css.lint.unknownProperties": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "scss.validate": true,
+  "css.validate": true,
+
+
+  // terminal setting 
 
   "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.focusAfterRun": "terminal",
   "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
     "Git Bash": {
       "path": "C:\\Program Files\\Git\\bin\\bash.exe",
       "args": ["--login", "-i"]
-    },
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell"
     }
   },
+
+
+  // CODE RUNNER SETTINGS                     
 
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
   "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.executorMap": {
+    "c": "bash -lc \"gcc '$fileName' -o '$fileNameWithoutExt' && './$fileNameWithoutExt'\""
+  },
+
+
+  // npm setting
 
   "npm.enableRunFromFolder": true,
   "npm.packageManager": "npm",
+
+
+  // github copilot
 
   "github.copilot.enable": {
     "*": false,
@@ -112,8 +291,20 @@
   "github.copilot.chat.agent.runTasks": false,
   "github.copilot.chat.codeGeneration.useInstructionFiles": false,
 
-  "css.lint.unknownAtRules": "ignore",
-  "css.lint.unknownProperties": "ignore",
 
-  "workbench.editor.empty.hint": "hidden"
+  // gitlench settings
+
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+
+
+  // debug settings
+
+  "debug.javascript.autoAttachSmartPattern": [
+    "${workspaceFolder}/**",
+    "**/$KNOWN_TOOLS$/**"
+  ],
+  "java.debug.settings.onBuildFailureProceed": true,
+  "editor.codeLensFontFamily": "source code pro"
+
 }
